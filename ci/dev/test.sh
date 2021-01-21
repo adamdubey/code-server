@@ -7,8 +7,7 @@ main() {
   cd test/test-plugin
   make -s out/index.js
   cd "$OLDPWD/test"
-  yarn
-  yarn test "$@"
+  yarn jest "$@"
 }
 
 main "$@"

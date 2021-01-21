@@ -15,12 +15,14 @@
 		"strict": true,
 		"noUnusedLocals": true,
 		"noUnusedParameters": true,
-		"newLine": "lf"
+		"newLine": "lf",
+		"skipLibCheck": true
 	},
 	"include": [
 		"**/*.ts"
 	],
 	"exclude": [
-		"node_modules/**"
+		"node_modules/**",
+		"**/*.d.ts"
 	]
 }

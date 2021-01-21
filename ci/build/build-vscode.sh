@@ -8,6 +8,9 @@ MINIFY=${MINIFY-true}
 
 main() {
   cd "$(dirname "${0}")/../.."
+  if [[ node_modules -d ]]; then
+    rm -rf node_modules
+  fi
   cd lib/vscode
 
   yarn gulp compile-build
