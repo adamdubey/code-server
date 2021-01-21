@@ -1,4 +1,4 @@
-import { normalize } from "../src/common/util"
+import { normalize } from "../common/util"
 
 describe("util", () => {
   describe("normalize", () => {

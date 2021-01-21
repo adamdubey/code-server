@@ -1,7 +1,7 @@
 import * as http from "http"
 import * as nodeFetch from "node-fetch"
-import * as util from "../src/common/util"
-import { ensureAddress } from "../src/node/app"
+import * as util from "../common/util"
+import { ensureAddress } from "../node/app"
 
 // Perhaps an abstraction similar to this should be used in app.ts as well.
 export class HttpServer {

@@ -4,9 +4,9 @@ set -euo pipefail
 main() {
   cd "$(dirname "$0")/../.."
 
-  cd test/test-plugin
+  cd src/test/test-plugin
   make -s out/index.js
-  cd "$OLDPWD/test"
+  cd "$OLDPWD/src/test"
   yarn
   yarn test "$@"
 }

@@ -1,7 +1,7 @@
 import * as express from "express"
-import { createApp } from "../src/node/app"
-import { parse, setDefaults, parseConfigFile, DefaultedArgs } from "../src/node/cli"
-import { register } from "../src/node/routes"
+import { createApp } from "../node/app"
+import { parse, setDefaults, parseConfigFile, DefaultedArgs } from "../node/cli"
+import { register } from "../node/routes"
 import * as httpserver from "./httpserver"
 
 export async function setup(

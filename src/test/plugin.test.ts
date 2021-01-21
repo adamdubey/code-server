@@ -2,8 +2,8 @@ import { logger } from "@coder/logger"
 import * as express from "express"
 import * as fs from "fs"
 import * as path from "path"
-import { PluginAPI } from "../src/node/plugin"
-import * as apps from "../src/node/routes/apps"
+import { PluginAPI } from "../node/plugin"
+import * as apps from "../node/routes/apps"
 import * as httpserver from "./httpserver"
 const fsp = fs.promises
 
