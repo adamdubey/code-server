@@ -107,5 +107,16 @@
   ],
   "engines": {
     "node": ">= 12"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.ts$": "<rootDir>/test/node_modules/ts-jest"
+    },
+    "testEnvironment": "node",
+    "testPathIgnorePatterns": ["/node_modules/", "/lib/"],
+    "collectCoverage": true,
+    "collectCoverageFrom": ["<rootDir>/src/**/*.ts"],
+    "coverageDirectory": "<rootDir>/coverage",
+    "coverageReporters": ["json", "text"]
   }
 }

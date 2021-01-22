@@ -5,10 +5,14 @@ main() {
   cd "$(dirname "$0")/../.."
   source ./ci/lib.sh
 
-  cd lib/vscode
+  pushd lib/vscode
   yarn ${CI+--frozen-lockfile}
-
   symlink_asar
+  popd
+
+  pushd test
+  yarn ${CI+--frozen-lockfile}
+  popd
 }
 
 main "$@"
